@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shruti Jayaswal | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Shruti Jayaswal</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#skills">Skills</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="theme-toggle" aria-label="Toggle theme"></button>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-bg-shapes">
+      <span class="shape shape-1"></span>
+      <span class="shape shape-2"></span>
+      <span class="shape shape-3"></span>
+    </div>
+    <div class="hero-glass-card">
+      <div class="hero-glass-left">
+        <img src="shruti.jpg" alt="Shruti Jayaswal" class="profile-img animated-profile">
+      </div>
+      <div class="hero-glass-right">
+        <h1 class="hero-title">Hi, I'm <span class="highlight">Shruti</span> —<br> a passionate frontend developer<br> designing modern and user-friendly digital experiences.</h1>
+        <button class="cta modern-cta" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">View My Work</button>
+        <div class="socials modern-socials">
+          <a href="mailto:shrutijayaswal671@gmail.com" target="_blank" title="Email"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><polyline points="3 7 12 13 21 7"/></svg></a>
+          <a href="https://linkedin.com/in/shruti-jayaswal-a264b3215" target="_blank" title="LinkedIn"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><line x1="8" y1="11" x2="8" y2="16"/><line x1="12" y1="11" x2="12" y2="16"/><circle cx="8" cy="8" r="1"/></svg></a>
+          <a href="https://github.com/sjshruti" target="_blank" title="GitHub"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.36 6.84 9.72.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.61-3.37-1.36-3.37-1.36-.45-1.17-1.1-1.48-1.1-1.48-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.65.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05a9.38 9.38 0 012.5-.34c.85.01 1.71.12 2.5.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.07.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.58.69.48A10.01 10.01 0 0022 12.26C22 6.58 17.52 2 12 2z"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <img src="shruti.jpg" alt="Shruti Jayaswal" class="about-img">
+      <div>
+        <p>
+          Shruti is a Computer Science graduate with hands-on experience in web development, offering a blend of technical skills and creative UI/UX design capabilities. She is dedicated to delivering high-quality, responsive web solutions and is actively expanding her knowledge in advanced tools and technologies.
+        </p>
+        <h3>Education</h3>
+        <ul>
+          <li>B.Tech in Computer Science and Engineering, CMR Institute of Technology, Bengaluru – 2025</li>
+          <li>Pre-University, St. Xavier's Secondary School, Nepal – 2020</li>
+          <li>SSLC, Mother Teresa Public School, Nepal – 2018</li>
+        </ul>
+        <h3>Coursework</h3>
+        <ul>
+          <li>HTML5 & CSS</li>
+          <li>Python</li>
+          <li>DBMS using MySQL</li>
+          <li>MERN Stack (MongoDB, Express.js, React.js, Node.js)</li>
+        </ul>
+        <h3>Soft Skills</h3>
+        <ul>
+          <li>Problem-solving</li>
+          <li>Communication</li>
+          <li>Adaptability</li>
+          <li>Time Management</li>
+        </ul>
+        <a href="resume.pdf" class="resume-btn" download>Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <div class="achievements-list">
+      <div class="achievement-card">
+        <h3>Hostel Secretary Award</h3>
+        <p>Recognized for leadership and student coordination (CMRIT, 2025)</p>
+      </div>
+      <div class="achievement-card">
+        <h3>University High Grade Achievement</h3>
+        <p>CMRIT, 2023</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div>
+        <h3>Programming</h3>
+        <ul>
+          <li>Java</li>
+          <li>JavaScript</li>
+          <li>SQL</li>
+          <li>C</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Web Development</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>React JS</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Tools & Platforms</h3>
+        <ul>
+          <li>VS Code</li>
+          <li>GIT</li>
+          <li>JIRA</li>
+          <li>WordPress</li>
+          <li>MySQL</li>
+          <li>MongoDB</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Soft Skills</h3>
+        <ul>
+          <li>Leadership</li>
+          <li>Reasoning</li>
+          <li>Debugging</li>
+          <li>Emotional Intelligence</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <div class="services-list">
+      <div class="service-card">
+        <h3>UI/UX Design</h3>
+        <p>Clean and responsive interfaces with mobile-first principles.</p>
+      </div>
+      <div class="service-card">
+        <h3>Web Design & Development</h3>
+        <p>Structured with HTML/CSS/JS, styled with modern layout techniques.</p>
+      </div>
+      <div class="service-card">
+        <h3>Frontend Logic & Interactivity</h3>
+        <p>Login forms, dashboards, games (Snake), etc.</p>
+      </div>
+      <div class="service-card">
+        <h3>Responsive Design</h3>
+        <p>Optimized for all devices.</p>
+      </div>
+      <div class="service-card">
+        <h3>Clean Code & Performance</h3>
+        <p>Fast loading, maintainable, and efficient.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-list">
+      <div class="project-card">
+        <img src="drag-drop.png" alt="Drag and Drop/Browse Image File">
+        <h3>Drag and Drop / Browse Image File</h3>
+        <p>A web app that lets users drag and drop or browse to upload image files, with instant preview and validation.</p>
+        <div class="tools">HTML, CSS, JavaScript</div>
+        <a href="https://github.com/sjshruti/drag-drop-image" target="_blank">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="drawing-app.png" alt="Drawing App">
+        <h3>Drawing App</h3>
+        <p>An interactive drawing application with multiple brush styles, colors, and save/export features.</p>
+        <div class="tools">HTML, CSS, JavaScript</div>
+        <a href="https://github.com/sjshruti/drawing-app" target="_blank">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="agency-client.png" alt="Agency and Client Management System">
+        <h3>Agency and Client Management System</h3>
+        <p>Internal stakeholder management with MySQL-PHP backend. Responsive frontend using HTML/CSS/JS.</p>
+        <div class="tools">HTML, CSS, JS, PHP, MySQL</div>
+        <a href="https://github.com/sjshruti/agency-client-management" target="_blank">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="elearn-hub.png" alt="E-Learn Hub">
+        <h3>E-Learn Hub: Online Course Management System</h3>
+        <p>Course browsing and enrollment system. PHP/MySQL backend and interactive frontend.</p>
+        <div class="tools">HTML, CSS, JS, PHP, MySQL</div>
+        <a href="https://github.com/sjshruti/e-learn-hub" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="contact-details">
+      <p>📧 Email: <a href="mailto:shrutijayaswal671@gmail.com">shrutijayaswal671@gmail.com</a></p>
+      <p>📞 Phone: 7619387964</p>
+      <p>💼 LinkedIn: <a href="https://linkedin.com/in/shruti-jayaswal-a264b3215" target="_blank">linkedin.com/in/shruti-jayaswal-a264b3215</a></p>
+      <p>💻 GitHub: <a href="https://github.com/sjshruti" target="_blank">github.com/sjshruti</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Shruti Jayaswal. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
