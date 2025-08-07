@@ -1,1 +1,1 @@
-Live Demo https://sjshruti.github.io/portfolio/
+Live Demo https://sjshruti.github.io/
