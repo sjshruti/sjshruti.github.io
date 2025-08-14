@@ -22,9 +22,51 @@ themeToggle.addEventListener('click', () => {
   setTheme(!body.classList.contains('dark'));
 });
 
-// Contact form (demo only)
-document.querySelector('.contact-form').addEventListener('submit', function(e) {
+// Contact form with email functionality
+document.querySelector('.contact-form').addEventListener('submit', async function(e) {
   e.preventDefault();
-  alert('Thank you for reaching out, Shruti will get back to you soon!');
-  this.reset();
+  
+  const submitButton = this.querySelector('button[type="submit"]');
+  const originalText = submitButton.textContent;
+  
+  // Show loading state
+  submitButton.textContent = 'Sending...';
+  submitButton.disabled = true;
+  
+  // Get form data
+  const formData = {
+    name: this.querySelector('input[name="name"]').value,
+    email: this.querySelector('input[name="email"]').value,
+    message: this.querySelector('textarea[name="message"]').value
+  };
+  
+  try {
+    // Send to backend
+    const response = await fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData)
+    });
+    
+    const result = await response.json();
+    
+    if (result.success) {
+      // Success message
+      alert('✅ ' + result.message);
+      this.reset();
+    } else {
+      // Error message from server
+      alert('❌ ' + result.message);
+    }
+    
+  } catch (error) {
+    console.error('Error sending message:', error);
+    alert('❌ Failed to send message. Please check your internet connection and try again.');
+  } finally {
+    // Reset button state
+    submitButton.textContent = originalText;
+    submitButton.disabled = false;
+  }
 });
